@@ -1,0 +1,2014 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "JoyfulNoise Tiny Utility Board - Board 2 - Main Board"
+Date "2021-02-06"
+Rev "0.3"
+Comp "Created by Ben Reeves"
+Comment1 "This hardware is open source under CC BY-SA 4.0"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C_Small C10
+U 1 1 5FE97919
+P 8075 2675
+F 0 "C10" H 8167 2721 50  0000 L CNN
+F 1 "0.1u" H 8167 2630 50  0000 L CNN
+F 2 "SDIY:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 8075 2675 50  0001 C CNN
+F 3 "" H 8075 2675 50  0001 C CNN
+F 4 "" H 8075 2675 50  0001 C CNN "Part"
+F 5 "" H 8075 2675 50  0001 C CNN "Power Rating"
+F 6 "C49678" H 8075 2675 50  0001 C CNN "LCSC"
+F 7 "Yes" H 8075 2675 50  0001 C CNN "SMT Place"
+F 8 "C_0805" H 8075 2675 50  0001 C CNN "SMT package"
+F 9 "Ceramic cap" H 8075 2675 50  0001 C CNN "Type"
+	1    8075 2675
+	1    0    0    -1  
+$EndComp
+Text Label 6325 2850 0    50   ~ 0
+MCU_PB0
+Text Label 6325 2950 0    50   ~ 0
+MCU_PWM
+Text Label 6325 3050 0    50   ~ 0
+MCU_ADC1
+Text Label 6325 3150 0    50   ~ 0
+MCU_ADC3
+Text Label 6325 3250 0    50   ~ 0
+MCU_ADC2
+Text Label 4900 2900 0    50   ~ 0
+MCU_ADC3
+$Comp
+L Device:R R6
+U 1 1 5FE9817D
+P 2750 1650
+F 0 "R6" V 2830 1650 50  0000 C CNN
+F 1 "10k" V 2750 1650 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2680 1650 50  0001 C CNN
+F 3 "" H 2750 1650 50  0001 C CNN
+F 4 "" H 2750 1650 50  0001 C CNN "Part"
+F 5 "1%" H 2750 1650 50  0001 C CNN "Tolerance"
+F 6 "C17414" H 2750 1650 50  0001 C CNN "LCSC"
+F 7 "Yes" H 2750 1650 50  0001 C CNN "SMT Place"
+F 8 "R_0805" H 2750 1650 50  0001 C CNN "SMT package"
+F 9 "1% Metal Film Resistor" H 2750 1650 50  0001 C CNN "Type"
+	1    2750 1650
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FE982EA
+P 2150 1650
+F 0 "R5" V 2230 1650 50  0000 C CNN
+F 1 "10k" V 2150 1650 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2080 1650 50  0001 C CNN
+F 3 "" H 2150 1650 50  0001 C CNN
+F 4 "" H 2150 1650 50  0001 C CNN "Part"
+F 5 "1%" H 2150 1650 50  0001 C CNN "Tolerance"
+F 6 "C17414" H 2150 1650 50  0001 C CNN "LCSC"
+F 7 "Yes" H 2150 1650 50  0001 C CNN "SMT Place"
+F 8 "R_0805" H 2150 1650 50  0001 C CNN "SMT package"
+F 9 "1% Metal Film Resistor" H 2150 1650 50  0001 C CNN "Type"
+	1    2150 1650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2700 1350 2450 1350
+Wire Wire Line
+	2300 1650 2450 1650
+Connection ~ 2450 1650
+Wire Wire Line
+	2450 1350 2450 1650
+Wire Wire Line
+	2900 1650 3400 1650
+Wire Wire Line
+	3400 1650 3400 1250
+Wire Wire Line
+	3300 1250 3400 1250
+$Comp
+L Device:R R4
+U 1 1 5FE988B0
+P 3700 1250
+F 0 "R4" V 3780 1250 50  0000 C CNN
+F 1 "10k" V 3700 1250 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3630 1250 50  0001 C CNN
+F 3 "" H 3700 1250 50  0001 C CNN
+F 4 "" H 3700 1250 50  0001 C CNN "Part"
+F 5 "1%" H 3700 1250 50  0001 C CNN "Tolerance"
+F 6 "C17414" H 3700 1250 50  0001 C CNN "LCSC"
+F 7 "Yes" H 3700 1250 50  0001 C CNN "SMT Place"
+F 8 "R_0805" H 3700 1250 50  0001 C CNN "SMT package"
+F 9 "1% Metal Film Resistor" H 3700 1250 50  0001 C CNN "Type"
+	1    3700 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FE988F6
+P 3700 950
+F 0 "R2" V 3780 950 50  0000 C CNN
+F 1 "10k" V 3700 950 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3630 950 50  0001 C CNN
+F 3 "" H 3700 950 50  0001 C CNN
+F 4 "" H 3700 950 50  0001 C CNN "Part"
+F 5 "1%" H 3700 950 50  0001 C CNN "Tolerance"
+F 6 "C17414" H 3700 950 50  0001 C CNN "LCSC"
+F 7 "Yes" H 3700 950 50  0001 C CNN "SMT Place"
+F 8 "R_0805" H 3700 950 50  0001 C CNN "SMT package"
+F 9 "1% Metal Film Resistor" H 3700 950 50  0001 C CNN "Type"
+	1    3700 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR024
+U 1 1 5FE98991
+P 1800 1750
+F 0 "#PWR024" H 1800 1500 50  0001 C CNN
+F 1 "GNDREF" H 1800 1600 50  0001 C CNN
+F 2 "" H 1800 1750 50  0001 C CNN
+F 3 "" H 1800 1750 50  0001 C CNN
+	1    1800 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1750 1800 1650
+Wire Wire Line
+	1800 1650 2000 1650
+Connection ~ 3400 1250
+$Comp
+L power:+5V #PWR025
+U 1 1 5FE98B76
+P 3450 900
+F 0 "#PWR025" H 3450 750 50  0001 C CNN
+F 1 "+5V" H 3450 1040 50  0000 C CNN
+F 2 "" H 3450 900 50  0001 C CNN
+F 3 "" H 3450 900 50  0001 C CNN
+	1    3450 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1250 3950 1250
+Text Label 4900 3950 0    50   ~ 0
+MCU_ADC2
+$Comp
+L Device:D_Schottky D1
+U 1 1 5FE98CF1
+P 4450 1050
+F 0 "D1" H 4450 1150 50  0000 C CNN
+F 1 "BAT81" H 4450 950 50  0001 C CNN
+F 2 "SDIY:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp" H 4450 1050 50  0001 C CNN
+F 3 "" H 4450 1050 50  0001 C CNN
+F 4 "1N4148 okay" H 4450 1050 50  0001 C CNN "Note"
+F 5 "" H 4450 1050 50  0001 C CNN "Part"
+F 6 "C2128" H 4450 1050 50  0001 C CNN "LCSC"
+F 7 "" H 4450 1050 50  0001 C CNN "LCSCe"
+F 8 "Yes" H 4450 1050 50  0001 C CNN "SMT Place"
+F 9 "BAT54: C21107 (extended)" H 4450 1050 50  0001 C CNN "SMT Note"
+F 10 "SOD-323" H 4450 1050 50  0001 C CNN "SMT package"
+F 11 "Schottky clamping diode" H 4450 1050 50  0001 C CNN "Type"
+	1    4450 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D2
+U 1 1 5FE98D35
+P 4450 1450
+F 0 "D2" H 4450 1550 50  0000 C CNN
+F 1 "BAT81" H 4450 1350 50  0001 C CNN
+F 2 "SDIY:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp" H 4450 1450 50  0001 C CNN
+F 3 "" H 4450 1450 50  0001 C CNN
+F 4 "1N4148 okay" H 4450 1450 50  0001 C CNN "Note"
+F 5 "" H 4450 1450 50  0001 C CNN "Part"
+F 6 "C2128" H 4450 1450 50  0001 C CNN "LCSC"
+F 7 "" H 4450 1450 50  0001 C CNN "LCSCe"
+F 8 "Yes" H 4450 1450 50  0001 C CNN "SMT Place"
+F 9 "BAT54: C21107 (extended)" H 4450 1450 50  0001 C CNN "SMT Note"
+F 10 "SOD-323" H 4450 1450 50  0001 C CNN "SMT package"
+F 11 "Schottky clamping diode" H 4450 1450 50  0001 C CNN "Type"
+	1    4450 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 950  3950 950 
+Wire Wire Line
+	3950 950  3950 1250
+Connection ~ 3950 1250
+Wire Wire Line
+	4450 1200 4450 1250
+Connection ~ 4450 1250
+$Comp
+L power:+5V #PWR026
+U 1 1 5FE98E9E
+P 4450 900
+F 0 "#PWR026" H 4450 750 50  0001 C CNN
+F 1 "+5V" H 4450 1040 50  0000 C CNN
+F 2 "" H 4450 900 50  0001 C CNN
+F 3 "" H 4450 900 50  0001 C CNN
+	1    4450 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR027
+U 1 1 5FE98ECD
+P 4450 1600
+F 0 "#PWR027" H 4450 1350 50  0001 C CNN
+F 1 "GNDREF" H 4450 1450 50  0001 C CNN
+F 2 "" H 4450 1600 50  0001 C CNN
+F 3 "" H 4450 1600 50  0001 C CNN
+	1    4450 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 950  3550 950 
+Wire Wire Line
+	3450 900  3450 950 
+Text Notes 2440 1095 0    30   ~ 0
++2.5\n\n-2.5
+Wire Notes Line
+	2430 1075 2390 1075
+Wire Notes Line
+	2390 1075 2390 975 
+Wire Notes Line
+	2390 975  2320 975 
+Wire Notes Line
+	2320 975  2320 1075
+Wire Notes Line
+	2320 1075 2280 1075
+Text Notes 3640 1520 0    30   ~ 0
++5\n\n-5
+Wire Notes Line
+	3630 1500 3590 1500
+Wire Notes Line
+	3590 1500 3590 1400
+Wire Notes Line
+	3590 1400 3520 1400
+Wire Notes Line
+	3520 1400 3520 1500
+Wire Notes Line
+	3520 1500 3480 1500
+Text Notes 4140 1170 0    30   ~ 0
++5\n\n 0
+Wire Notes Line
+	4130 1150 4090 1150
+Wire Notes Line
+	4090 1150 4090 1050
+Wire Notes Line
+	4090 1050 4020 1050
+Wire Notes Line
+	4020 1050 4020 1150
+Wire Notes Line
+	4020 1150 3980 1150
+Text Notes 4640 3920 0    30   ~ 0
++5\n\n 0
+Wire Notes Line
+	4630 3900 4590 3900
+Wire Notes Line
+	4590 3900 4590 3800
+Wire Notes Line
+	4590 3800 4520 3800
+Wire Notes Line
+	4520 3800 4520 3900
+Wire Notes Line
+	4520 3900 4480 3900
+$Comp
+L Device:R R12
+U 1 1 5FE9CBC4
+P 2750 3350
+F 0 "R12" V 2830 3350 50  0000 C CNN
+F 1 "10k" V 2750 3350 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2680 3350 50  0001 C CNN
+F 3 "" H 2750 3350 50  0001 C CNN
+F 4 "" H 2750 3350 50  0001 C CNN "Part"
+F 5 "1%" H 2750 3350 50  0001 C CNN "Tolerance"
+F 6 "C17414" H 2750 3350 50  0001 C CNN "LCSC"
+F 7 "Yes" H 2750 3350 50  0001 C CNN "SMT Place"
+F 8 "R_0805" H 2750 3350 50  0001 C CNN "SMT package"
+F 9 "1% Metal Film Resistor" H 2750 3350 50  0001 C CNN "Type"
+	1    2750 3350
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5FE9CBD6
+P 2150 3350
+F 0 "R11" V 2230 3350 50  0000 C CNN
+F 1 "10k" V 2150 3350 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2080 3350 50  0001 C CNN
+F 3 "" H 2150 3350 50  0001 C CNN
+F 4 "" H 2150 3350 50  0001 C CNN "Part"
+F 5 "1%" H 2150 3350 50  0001 C CNN "Tolerance"
+F 6 "C17414" H 2150 3350 50  0001 C CNN "LCSC"
+F 7 "Yes" H 2150 3350 50  0001 C CNN "SMT Place"
+F 8 "R_0805" H 2150 3350 50  0001 C CNN "SMT package"
+F 9 "1% Metal Film Resistor" H 2150 3350 50  0001 C CNN "Type"
+	1    2150 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 3000 2450 3000
+Wire Wire Line
+	2300 3350 2450 3350
+Connection ~ 2450 3350
+Wire Wire Line
+	2450 3000 2450 3350
+Wire Wire Line
+	2900 3350 3400 3350
+Wire Wire Line
+	3400 3350 3400 2900
+Wire Wire Line
+	3300 2900 3400 2900
+$Comp
+L power:GNDREF #PWR028
+U 1 1 5FE9CBFA
+P 1800 3450
+F 0 "#PWR028" H 1800 3200 50  0001 C CNN
+F 1 "GNDREF" H 1800 3300 50  0001 C CNN
+F 2 "" H 1800 3450 50  0001 C CNN
+F 3 "" H 1800 3450 50  0001 C CNN
+	1    1800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3450 1800 3350
+Wire Wire Line
+	1800 3350 2000 3350
+Connection ~ 3400 2900
+Text Label 4900 1250 0    50   ~ 0
+MCU_ADC1
+$Comp
+L Device:D_Schottky D3
+U 1 1 5FE9CC0E
+P 4450 2700
+F 0 "D3" H 4450 2800 50  0000 C CNN
+F 1 "BAT81" H 4450 2600 50  0001 C CNN
+F 2 "SDIY:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp" H 4450 2700 50  0001 C CNN
+F 3 "" H 4450 2700 50  0001 C CNN
+F 4 "1N4148 okay" H 4450 2700 50  0001 C CNN "Note"
+F 5 "" H 4450 2700 50  0001 C CNN "Part"
+F 6 "C2128" H 4450 2700 50  0001 C CNN "LCSC"
+F 7 "" H 4450 2700 50  0001 C CNN "LCSCe"
+F 8 "Yes" H 4450 2700 50  0001 C CNN "SMT Place"
+F 9 "BAT54: C21107 (extended)" H 4450 2700 50  0001 C CNN "SMT Note"
+F 10 "SOD-323" H 4450 2700 50  0001 C CNN "SMT package"
+F 11 "Schottky clamping diode" H 4450 2700 50  0001 C CNN "Type"
+	1    4450 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D4
+U 1 1 5FE9CC14
+P 4450 3100
+F 0 "D4" H 4450 3200 50  0000 C CNN
+F 1 "BAT81" H 4450 3000 50  0001 C CNN
+F 2 "SDIY:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp" H 4450 3100 50  0001 C CNN
+F 3 "" H 4450 3100 50  0001 C CNN
+F 4 "1N4148 okay" H 4450 3100 50  0001 C CNN "Note"
+F 5 "" H 4450 3100 50  0001 C CNN "Part"
+F 6 "C2128" H 4450 3100 50  0001 C CNN "LCSC"
+F 7 "" H 4450 3100 50  0001 C CNN "LCSCe"
+F 8 "Yes" H 4450 3100 50  0001 C CNN "SMT Place"
+F 9 "BAT54: C21107 (extended)" H 4450 3100 50  0001 C CNN "SMT Note"
+F 10 "SOD-323" H 4450 3100 50  0001 C CNN "SMT package"
+F 11 "Schottky clamping diode" H 4450 3100 50  0001 C CNN "Type"
+	1    4450 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 2850 4450 2900
+Connection ~ 4450 2900
+$Comp
+L power:+5V #PWR030
+U 1 1 5FE9CC20
+P 4450 2550
+F 0 "#PWR030" H 4450 2400 50  0001 C CNN
+F 1 "+5V" H 4450 2690 50  0000 C CNN
+F 2 "" H 4450 2550 50  0001 C CNN
+F 3 "" H 4450 2550 50  0001 C CNN
+	1    4450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR031
+U 1 1 5FE9CC26
+P 4450 3250
+F 0 "#PWR031" H 4450 3000 50  0001 C CNN
+F 1 "GNDREF" H 4450 3100 50  0001 C CNN
+F 2 "" H 4450 3250 50  0001 C CNN
+F 3 "" H 4450 3250 50  0001 C CNN
+	1    4450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5FEA3BF6
+P 2500 5025
+F 0 "R16" V 2580 5025 50  0000 C CNN
+F 1 "1M" V 2500 5025 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2430 5025 50  0001 C CNN
+F 3 "" H 2500 5025 50  0001 C CNN
+F 4 "" H 2500 5025 50  0001 C CNN "Part"
+F 5 "Yes" H 2500 5025 50  0001 C CNN "SMT Place"
+F 6 "C17514" H 2500 5025 50  0001 C CNN "LCSC"
+F 7 "R_0805" H 2500 5025 50  0001 C CNN "SMT package"
+F 8 "5% Carbon Film Resistor" H 2500 5025 50  0001 C CNN "Type"
+	1    2500 5025
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:Q_NPN_EBC Q1
+U 1 1 5FEA3F6A
+P 3250 5025
+F 0 "Q1" H 3450 5075 50  0000 L CNN
+F 1 "2N3904" H 3450 4975 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 3450 5125 50  0001 C CNN
+F 3 "" H 3250 5025 50  0001 C CNN
+F 4 "C20526" H 3250 5025 50  0001 C CNN "LCSC"
+F 5 "" H 3250 5025 50  0001 C CNN "Part"
+F 6 "Yes" H 3250 5025 50  0001 C CNN "SMT Place"
+F 7 "SOT-23" H 3250 5025 50  0001 C CNN "SMT package"
+F 8 "NPN Transistor" H 3250 5025 50  0001 C CNN "Type"
+	1    3250 5025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_EBC Q2
+U 1 1 5FEA43AD
+P 4050 5025
+F 0 "Q2" H 4250 5075 50  0000 L CNN
+F 1 "2N3904" H 4250 4975 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 4250 5125 50  0001 C CNN
+F 3 "" H 4050 5025 50  0001 C CNN
+F 4 "C20526" H 4050 5025 50  0001 C CNN "LCSC"
+F 5 "" H 4050 5025 50  0001 C CNN "Part"
+F 6 "Yes" H 4050 5025 50  0001 C CNN "SMT Place"
+F 7 "SOT-23" H 4050 5025 50  0001 C CNN "SMT package"
+F 8 "NPN Transistor" H 4050 5025 50  0001 C CNN "Type"
+	1    4050 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5225 3350 5325
+Wire Wire Line
+	3350 5325 3750 5325
+Wire Wire Line
+	4150 5325 4150 5225
+Connection ~ 3750 5325
+$Comp
+L power:GNDREF #PWR033
+U 1 1 5FEA4709
+P 3750 5625
+F 0 "#PWR033" H 3750 5375 50  0001 C CNN
+F 1 "GNDREF" H 3750 5475 50  0001 C CNN
+F 2 "" H 3750 5625 50  0001 C CNN
+F 3 "" H 3750 5625 50  0001 C CNN
+	1    3750 5625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4725 3350 4775
+Wire Wire Line
+	3350 4775 3750 4775
+Wire Wire Line
+	3750 4775 3750 5025
+Wire Wire Line
+	3750 5025 3850 5025
+Wire Wire Line
+	2650 5025 2950 5025
+Wire Wire Line
+	4150 4725 4150 4775
+Connection ~ 4150 4775
+$Comp
+L Device:R R13
+U 1 1 5FEA562E
+P 3350 4575
+F 0 "R13" V 3430 4575 50  0000 C CNN
+F 1 "100k" V 3350 4575 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3280 4575 50  0001 C CNN
+F 3 "" H 3350 4575 50  0001 C CNN
+F 4 "" H 3350 4575 50  0001 C CNN "Part"
+F 5 "Yes" H 3350 4575 50  0001 C CNN "SMT Place"
+F 6 "C17407" H 3350 4575 50  0001 C CNN "LCSC"
+F 7 "R_0805" H 3350 4575 50  0001 C CNN "SMT package"
+F 8 "5% Carbon Film Resistor" H 3350 4575 50  0001 C CNN "Type"
+	1    3350 4575
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR034
+U 1 1 5FEA5A95
+P 3350 4425
+F 0 "#PWR034" H 3350 4275 50  0001 C CNN
+F 1 "+5V" H 3350 4565 50  0000 C CNN
+F 2 "" H 3350 4425 50  0001 C CNN
+F 3 "" H 3350 4425 50  0001 C CNN
+	1    3350 4425
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 4775
+$Comp
+L power:+5V #PWR035
+U 1 1 5FEA60D7
+P 4150 4425
+F 0 "#PWR035" H 4150 4275 50  0001 C CNN
+F 1 "+5V" H 4150 4565 50  0000 C CNN
+F 2 "" H 4150 4425 50  0001 C CNN
+F 3 "" H 4150 4425 50  0001 C CNN
+	1    4150 4425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4775 4700 4775
+Text Label 4900 4775 0    50   ~ 0
+MCU_PB0
+Wire Wire Line
+	4700 5575 4800 5575
+Connection ~ 4700 4775
+$Comp
+L Device:Q_NPN_EBC Q3
+U 1 1 5FEA7FA6
+P 5350 5575
+F 0 "Q3" H 5550 5625 50  0000 L CNN
+F 1 "2N3904" H 5550 5525 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 5550 5675 50  0001 C CNN
+F 3 "" H 5350 5575 50  0001 C CNN
+F 4 "C20526" H 5350 5575 50  0001 C CNN "LCSC"
+F 5 "" H 5350 5575 50  0001 C CNN "Part"
+F 6 "Yes" H 5350 5575 50  0001 C CNN "SMT Place"
+F 7 "SOT-23" H 5350 5575 50  0001 C CNN "SMT package"
+F 8 "NPN Transistor" H 5350 5575 50  0001 C CNN "Type"
+	1    5350 5575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5575 5150 5575
+Wire Wire Line
+	5450 5775 5450 5925
+Wire Wire Line
+	5450 5925 5350 5925
+$Comp
+L Device:R R19
+U 1 1 5FEA9D29
+P 5450 5175
+F 0 "R19" V 5530 5175 50  0000 C CNN
+F 1 "R_led" V 5450 5175 40  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 5380 5175 50  0001 C CNN
+F 3 "" H 5450 5175 50  0001 C CNN
+F 4 "5.6k, varies by LED" H 5450 5175 50  0001 C CNN "Note"
+F 5 "" H 5450 5175 50  0001 C CNN "Part"
+F 6 "" H 5450 5175 50  0001 C CNN "SMT Place"
+F 7 "-smtmfg" H 5450 5175 50  0001 C CNN "Config"
+F 8 "Through-hole (can fit 0603)" H 5450 5175 50  0001 C CNN "SMT package"
+F 9 "5% Carbon Film Resistor" H 5450 5175 50  0001 C CNN "Type"
+	1    5450 5175
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 5325 5450 5375
+Wire Wire Line
+	2975 6800 2875 6800
+Wire Wire Line
+	2875 6800 2875 7250
+Wire Wire Line
+	2650 7250 2875 7250
+$Comp
+L Device:R R25
+U 1 1 5FEB566D
+P 3275 7250
+F 0 "R25" V 3355 7250 50  0000 C CNN
+F 1 "100k .1%" V 3175 7250 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3205 7250 50  0001 C CNN
+F 3 "" H 3275 7250 50  0001 C CNN
+F 4 "1% okay if high precision not needed" H 3275 7250 50  0001 C CNN "Note"
+F 5 "" H 3275 7250 50  0001 C CNN "Part"
+F 6 "0.1%" H 3275 7250 50  0001 C CNN "Tolerance"
+F 7 "Yes" H 3275 7250 50  0001 C CNN "SMT Place"
+F 8 "C17407" H 3275 7250 50  0001 C CNN "LCSC"
+F 9 "0.1%: C55868 (extended)" H 3275 7250 50  0001 C CNN "SMT Note"
+F 10 "R_0805" H 3275 7250 50  0001 C CNN "SMT package"
+F 11 "0.1% Metal Film Resistor" H 3275 7250 50  0001 C CNN "Type"
+	1    3275 7250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3675 7250 3425 7250
+Wire Wire Line
+	3575 6700 3675 6700
+$Comp
+L Device:R R24
+U 1 1 5FEB58F5
+P 2500 7250
+F 0 "R24" V 2580 7250 50  0000 C CNN
+F 1 "100k .1%" V 2400 7250 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2430 7250 50  0001 C CNN
+F 3 "" H 2500 7250 50  0001 C CNN
+F 4 "1% okay if high precision not needed" H 2500 7250 50  0001 C CNN "Note"
+F 5 "" H 2500 7250 50  0001 C CNN "Part"
+F 6 "0.1%" H 2500 7250 50  0001 C CNN "Tolerance"
+F 7 "Yes" H 2500 7250 50  0001 C CNN "SMT Place"
+F 8 "C17407" H 2500 7250 50  0001 C CNN "LCSC"
+F 9 "0.1%: C55868 (extended)" H 2500 7250 50  0001 C CNN "SMT Note"
+F 10 "R_0805" H 2500 7250 50  0001 C CNN "SMT package"
+F 11 "0.1% Metal Film Resistor" H 2500 7250 50  0001 C CNN "Type"
+	1    2500 7250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2875 7250
+Wire Wire Line
+	2875 7550 3175 7550
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 5FEB5E16
+P 3275 7550
+F 0 "JP1" H 3275 7630 50  0000 C CNN
+F 1 "JMP" H 3285 7490 40  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3275 7550 50  0001 C CNN
+F 3 "" H 3275 7550 50  0001 C CNN
+F 4 "Plus 2x jumpers. Alternatively, you can solder in some wire." H 3275 7550 50  0001 C CNN "Note"
+F 5 "" H 3275 7550 50  0001 C CNN "Part"
+F 6 "-smtmfg" H 3275 7550 50  0001 C CNN "Config"
+F 7 "1x2 Male Pin Header" H 3275 7550 50  0001 C CNN "Type"
+	1    3275 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3675 7550 3375 7550
+Connection ~ 3675 7250
+$Comp
+L power:+5V #PWR037
+U 1 1 5FEB67CE
+P 2075 7200
+F 0 "#PWR037" H 2075 7050 50  0001 C CNN
+F 1 "+5V" H 2075 7340 50  0000 C CNN
+F 2 "" H 2075 7200 50  0001 C CNN
+F 3 "" H 2075 7200 50  0001 C CNN
+	1    2075 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2075 7200 2075 7250
+Wire Wire Line
+	2075 7250 2350 7250
+Wire Wire Line
+	2225 6600 2500 6600
+$Comp
+L Device:C_Small C12
+U 1 1 5FEB6ADE
+P 2500 6800
+F 0 "C12" H 2510 6870 50  0000 L CNN
+F 1 "1.8n" H 2510 6720 40  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 2500 6800 50  0001 C CNN
+F 3 "" H 2500 6800 50  0001 C CNN
+F 4 "" H 2500 6800 50  0001 C CNN "Part"
+F 5 "" H 2500 6800 50  0001 C CNN "Power Rating"
+F 6 "C28260" H 2500 6800 50  0001 C CNN "LCSC"
+F 7 "Yes" H 2500 6800 50  0001 C CNN "SMT Place"
+F 8 "2.2n" H 2500 6800 50  0001 C CNN "SMT Value"
+F 9 "See note about PWM filter" H 2500 6800 50  0001 C CNN "Note"
+F 10 "C_0805" H 2500 6800 50  0001 C CNN "SMT package"
+F 11 "Mylar / poly cap" H 2500 6800 50  0001 C CNN "Type"
+	1    2500 6800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR038
+U 1 1 5FEB6BD4
+P 2500 6900
+F 0 "#PWR038" H 2500 6650 50  0001 C CNN
+F 1 "GNDREF" H 2500 6750 50  0001 C CNN
+F 2 "" H 2500 6900 50  0001 C CNN
+F 3 "" H 2500 6900 50  0001 C CNN
+	1    2500 6900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 6600
+$Comp
+L Device:R R22
+U 1 1 5FEB71A8
+P 2075 6600
+F 0 "R22" V 2155 6600 50  0000 C CNN
+F 1 "100k*" V 2075 6600 40  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2005 6600 50  0001 C CNN
+F 3 "" H 2075 6600 50  0001 C CNN
+F 4 "" H 2075 6600 50  0001 C CNN "Part"
+F 5 "Yes" H 2075 6600 50  0001 C CNN "SMT Place"
+F 6 "68k" H 2075 6600 50  0001 C CNN "SMT Value"
+F 7 "C17801" H 2075 6600 50  0001 C CNN "LCSC"
+F 8 "See note about PWM filter" H 2075 6600 50  0001 C CNN "Note"
+F 9 "R_0805" H 2075 6600 50  0001 C CNN "SMT package"
+F 10 "1% Metal Film Resistor" H 2075 6600 50  0001 C CNN "Type"
+	1    2075 6600
+	0    -1   -1   0   
+$EndComp
+Text Label 1150 6600 0    50   ~ 0
+MCU_PWM
+Text Notes 1340 6470 0    30   ~ 0
++5\n\n 0
+Wire Notes Line
+	1330 6450 1290 6450
+Wire Notes Line
+	1290 6450 1290 6350
+Wire Notes Line
+	1290 6350 1220 6350
+Wire Notes Line
+	1220 6350 1220 6450
+Wire Notes Line
+	1220 6450 1180 6450
+Text Notes 3915 6920 0    30   ~ 0
++5\n\n-5
+Wire Notes Line
+	3905 6900 3865 6900
+Wire Notes Line
+	3865 6900 3865 6800
+Wire Notes Line
+	3865 6800 3795 6800
+Wire Notes Line
+	3795 6800 3795 6900
+Wire Notes Line
+	3795 6900 3755 6900
+Text Notes 3915 7170 0    30   ~ 0
++5\n\n 0
+Wire Notes Line
+	3905 7150 3865 7150
+Wire Notes Line
+	3865 7150 3865 7050
+Wire Notes Line
+	3865 7050 3795 7050
+Wire Notes Line
+	3795 7050 3795 7150
+Wire Notes Line
+	3795 7150 3755 7150
+Text Notes 4025 6900 0    30   ~ 0
+(without jumper)
+Text Notes 4025 7150 0    30   ~ 0
+(with jumper)
+$Comp
+L power:GNDREF #PWR039
+U 1 1 5FEBB41F
+P 4725 6500
+F 0 "#PWR039" H 4725 6250 50  0001 C CNN
+F 1 "GNDREF" H 4725 6350 50  0001 C CNN
+F 2 "" H 4725 6500 50  0001 C CNN
+F 3 "" H 4725 6500 50  0001 C CNN
+	1    4725 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4775 6500 4725 6500
+Wire Wire Line
+	4675 6700 4725 6700
+$Comp
+L Device:R R23
+U 1 1 5FEBBE29
+P 4525 6700
+F 0 "R23" V 4605 6700 50  0000 C CNN
+F 1 "R_led" V 4525 6700 40  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4455 6700 50  0001 C CNN
+F 3 "" H 4525 6700 50  0001 C CNN
+F 4 "5.6k, varies by LED" H 4525 6700 50  0001 C CNN "Note"
+F 5 "" H 4525 6700 50  0001 C CNN "Part"
+F 6 "" H 4525 6700 50  0001 C CNN "SMT Place"
+F 7 "-smtmfg" H 4525 6700 50  0001 C CNN "Config"
+F 8 "Through-hole (can fit 0603)" H 4525 6700 50  0001 C CNN "SMT package"
+F 9 "5% Carbon Film Resistor" H 4525 6700 50  0001 C CNN "Type"
+	1    4525 6700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4725 6700 4725 7050
+Wire Wire Line
+	4725 7050 4875 7050
+Connection ~ 4725 6700
+Wire Wire Line
+	5275 7200 5475 7200
+Wire Wire Line
+	5475 7200 5475 6600
+Wire Wire Line
+	5475 6600 5375 6600
+Connection ~ 3675 6700
+$Comp
+L JNTUB-rescue:CONN_02X05 J9
+U 1 1 5FEC10FA
+P 6300 1400
+F 0 "J9" H 6300 1700 50  0000 C CNN
+F 1 "POWER_HDR" H 6300 1100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 6300 200 50  0001 C CNN
+F 3 "" H 6300 200 50  0001 C CNN
+F 4 "" H 6300 1400 50  0001 C CNN "Part"
+F 5 "-smtmfg" H 6300 1400 50  0001 C CNN "Config"
+F 6 "2x5 Male Pin Header" H 6300 1400 50  0001 C CNN "Type"
+	1    6300 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1200 6050 1200
+Wire Wire Line
+	5950 1050 6650 1050
+Wire Wire Line
+	6650 1200 6550 1200
+Wire Wire Line
+	6050 1600 5950 1600
+Wire Wire Line
+	5950 1600 5950 1750
+Wire Wire Line
+	5950 1750 6650 1750
+Wire Wire Line
+	6650 1600 6650 1750
+Wire Wire Line
+	6650 1600 6550 1600
+Wire Wire Line
+	6650 1500 6550 1500
+Wire Wire Line
+	6650 1300 6650 1400
+Wire Wire Line
+	6650 1300 6550 1300
+Wire Wire Line
+	6550 1400 6650 1400
+Connection ~ 6650 1400
+Wire Wire Line
+	6050 1300 5950 1300
+Wire Wire Line
+	5950 1300 5950 1400
+Wire Wire Line
+	5950 1500 6050 1500
+Wire Wire Line
+	5800 1400 5950 1400
+Connection ~ 5950 1400
+$Comp
+L power:GNDREF #PWR040
+U 1 1 5FEC4A4B
+P 5800 1450
+F 0 "#PWR040" H 5800 1200 50  0001 C CNN
+F 1 "GNDREF" H 5800 1300 50  0001 C CNN
+F 2 "" H 5800 1450 50  0001 C CNN
+F 3 "" H 5800 1450 50  0001 C CNN
+	1    5800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR041
+U 1 1 5FEC4BDD
+P 6900 1450
+F 0 "#PWR041" H 6900 1200 50  0001 C CNN
+F 1 "GNDREF" H 6900 1550 50  0000 C CNN
+F 2 "" H 6900 1450 50  0001 C CNN
+F 3 "" H 6900 1450 50  0001 C CNN
+	1    6900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG042
+U 1 1 5FEC5A15
+P 7350 1050
+F 0 "#FLG042" H 7350 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 7350 1200 40  0000 C CNN
+F 2 "" H 7350 1050 50  0001 C CNN
+F 3 "" H 7350 1050 50  0001 C CNN
+	1    7350 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG043
+U 1 1 5FEC5CCC
+P 7350 1400
+F 0 "#FLG043" H 7350 1475 50  0001 C CNN
+F 1 "PWR_FLAG" H 7350 1550 40  0000 C CNN
+F 2 "" H 7350 1400 50  0001 C CNN
+F 3 "" H 7350 1400 50  0001 C CNN
+	1    7350 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG044
+U 1 1 5FEC636C
+P 7350 1750
+F 0 "#FLG044" H 7350 1825 50  0001 C CNN
+F 1 "PWR_FLAG" H 7350 1900 40  0000 C CNN
+F 2 "" H 7350 1750 50  0001 C CNN
+F 3 "" H 7350 1750 50  0001 C CNN
+	1    7350 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5FEC6FB1
+P 8100 1250
+F 0 "C8" H 8110 1320 50  0000 L CNN
+F 1 "0.1u" H 8110 1170 50  0000 L CNN
+F 2 "SDIY:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 8100 1250 50  0001 C CNN
+F 3 "" H 8100 1250 50  0001 C CNN
+F 4 "" H 8100 1250 50  0001 C CNN "Part"
+F 5 "" H 8100 1250 50  0001 C CNN "Power Rating"
+F 6 "C49678" H 8100 1250 50  0001 C CNN "LCSC"
+F 7 "Yes" H 8100 1250 50  0001 C CNN "SMT Place"
+F 8 "C_0805" H 8100 1250 50  0001 C CNN "SMT package"
+F 9 "Ceramic cap" H 8100 1250 50  0001 C CNN "Type"
+	1    8100 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5FEC7062
+P 8100 1550
+F 0 "C9" H 8110 1620 50  0000 L CNN
+F 1 "0.1u" H 8110 1470 50  0000 L CNN
+F 2 "SDIY:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 8100 1550 50  0001 C CNN
+F 3 "" H 8100 1550 50  0001 C CNN
+F 4 "" H 8100 1550 50  0001 C CNN "Part"
+F 5 "" H 8100 1550 50  0001 C CNN "Power Rating"
+F 6 "C49678" H 8100 1550 50  0001 C CNN "LCSC"
+F 7 "Yes" H 8100 1550 50  0001 C CNN "SMT Place"
+F 8 "C_0805" H 8100 1550 50  0001 C CNN "SMT package"
+F 9 "Ceramic cap" H 8100 1550 50  0001 C CNN "Type"
+	1    8100 1550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1050 8100 1150
+Wire Wire Line
+	8100 1750 8100 1650
+$Comp
+L Device:C_Small C4
+U 1 1 5FEC994C
+P 10150 1250
+F 0 "C4" H 10160 1320 50  0000 L CNN
+F 1 "0.1u" H 10160 1170 50  0000 L CNN
+F 2 "SDIY:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 10150 1250 50  0001 C CNN
+F 3 "" H 10150 1250 50  0001 C CNN
+F 4 "" H 10150 1250 50  0001 C CNN "Part"
+F 5 "" H 10150 1250 50  0001 C CNN "Power Rating"
+F 6 "C49678" H 10150 1250 50  0001 C CNN "LCSC"
+F 7 "Yes" H 10150 1250 50  0001 C CNN "SMT Place"
+F 8 "C_0805" H 10150 1250 50  0001 C CNN "SMT package"
+F 9 "Ceramic cap" H 10150 1250 50  0001 C CNN "Type"
+	1    10150 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR048
+U 1 1 5FEC9E33
+P 10150 950
+F 0 "#PWR048" H 10150 800 50  0001 C CNN
+F 1 "+5V" H 10150 1090 50  0000 C CNN
+F 2 "" H 10150 950 50  0001 C CNN
+F 3 "" H 10150 950 50  0001 C CNN
+	1    10150 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L79L05_TO92 U4
+U 1 1 5FECA9B0
+P 9650 1800
+F 0 "U4" H 9650 1651 50  0000 C CNN
+F 1 "79L05" H 9650 1560 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 9650 1800 50  0001 C CNN
+F 3 "" H 9650 1800 50  0001 C CNN
+F 4 "" H 9650 1800 50  0001 C CNN "Part"
+F 5 "Yes" H 9650 1800 50  0001 C CNN "SMT Place"
+F 6 "C122849" H 9650 1800 50  0001 C CNN "LCSC"
+F 7 "Yes" H 9650 1800 50  0001 C CNN "LCSCe"
+F 8 "SOT-89-3" H 9650 1800 50  0001 C CNN "SMT package"
+F 9 "LM79L05 -5V Regulator" H 9650 1800 50  0001 C CNN "Type"
+	1    9650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 1800 10150 1800
+Wire Wire Line
+	10150 1700 10150 1800
+$Comp
+L Device:C_Small C6
+U 1 1 5FECC988
+P 10150 1600
+F 0 "C6" H 10160 1670 50  0000 L CNN
+F 1 "0.1u" H 10160 1520 50  0000 L CNN
+F 2 "SDIY:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 10150 1600 50  0001 C CNN
+F 3 "" H 10150 1600 50  0001 C CNN
+F 4 "" H 10150 1600 50  0001 C CNN "Part"
+F 5 "" H 10150 1600 50  0001 C CNN "Power Rating"
+F 6 "C49678" H 10150 1600 50  0001 C CNN "LCSC"
+F 7 "Yes" H 10150 1600 50  0001 C CNN "SMT Place"
+F 8 "C_0805" H 10150 1600 50  0001 C CNN "SMT package"
+F 9 "Ceramic cap" H 10150 1600 50  0001 C CNN "Type"
+	1    10150 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 10150 1800
+Wire Wire Line
+	10150 1350 10150 1400
+Wire Wire Line
+	10150 950  10150 1050
+Wire Wire Line
+	9150 1000 9150 1050
+Connection ~ 10150 1050
+Text Notes 2090 4995 0    30   ~ 0
++12\n\n-12
+Wire Notes Line
+	2080 4975 2040 4975
+Wire Notes Line
+	2040 4975 2040 4875
+Wire Notes Line
+	2040 4875 1970 4875
+Wire Notes Line
+	1970 4875 1970 4975
+Wire Notes Line
+	1970 4975 1930 4975
+$Comp
+L Device:D D5
+U 1 1 5FED4C11
+P 2950 5225
+F 0 "D5" H 2950 5325 50  0000 C CNN
+F 1 "1N4148" H 2950 5125 50  0001 C CNN
+F 2 "SDIY:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp" H 2950 5225 50  0001 C CNN
+F 3 "" H 2950 5225 50  0001 C CNN
+F 4 "" H 2950 5225 50  0001 C CNN "Part"
+F 5 "C2128" H 2950 5225 50  0001 C CNN "LCSC"
+F 6 "Yes" H 2950 5225 50  0001 C CNN "SMT Place"
+F 7 "SOD-323" H 2950 5225 50  0001 C CNN "SMT package"
+F 8 "Switching diode" H 2950 5225 50  0001 C CNN "Type"
+	1    2950 5225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 5075 2950 5025
+Connection ~ 2950 5025
+$Comp
+L power:GNDREF #PWR051
+U 1 1 5FED51FD
+P 2950 5425
+F 0 "#PWR051" H 2950 5175 50  0001 C CNN
+F 1 "GNDREF" H 2950 5275 50  0001 C CNN
+F 2 "" H 2950 5425 50  0001 C CNN
+F 3 "" H 2950 5425 50  0001 C CNN
+	1    2950 5425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5375 2950 5425
+$Comp
+L Connector:Conn_01x07_Female J10
+U 1 1 5FE9AC6F
+P 8875 3225
+AR Path="/5FE9AC6F" Ref="J10"  Part="1" 
+AR Path="/5FE97452/5FE9AC6F" Ref="J10"  Part="1" 
+F 0 "J10" H 8875 3675 50  0000 C CNN
+F 1 "B2_HDR" V 8975 3225 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 8875 3225 50  0001 C CNN
+F 3 "" H 8875 3225 50  0001 C CNN
+F 4 "" H 8875 3225 50  0001 C CNN "Part"
+F 5 "-smtmfg" H 8875 3225 50  0001 C CNN "Config"
+F 6 "1x7 Female Pin Header" H 8875 3225 50  0001 C CNN "Type"
+	1    8875 3225
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x07_Female J11
+U 1 1 5FE9AC7C
+P 10600 3225
+AR Path="/5FE9AC7C" Ref="J11"  Part="1" 
+AR Path="/5FE97452/5FE9AC7C" Ref="J11"  Part="1" 
+F 0 "J11" H 10600 3675 50  0000 C CNN
+F 1 "B2_HDR" V 10700 3225 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 10600 3225 50  0001 C CNN
+F 3 "" H 10600 3225 50  0001 C CNN
+F 4 "" H 10600 3225 50  0001 C CNN "Part"
+F 5 "-smtmfg" H 10600 3225 50  0001 C CNN "Config"
+F 6 "1x7 Female Pin Header" H 10600 3225 50  0001 C CNN "Type"
+	1    10600 3225
+	1    0    0    -1  
+$EndComp
+Text Label 2075 3950 2    50   ~ 0
+P3_POT
+Text Notes 6400 2425 2    40   ~ 0
+Note: might not be PWM,\nmight just be digital out.
+Text Notes 4440 4745 0    30   ~ 0
++4\n\n+1
+Wire Notes Line
+	4405 4725 4365 4725
+Wire Notes Line
+	4365 4725 4365 4625
+Wire Notes Line
+	4365 4625 4295 4625
+Wire Notes Line
+	4295 4625 4295 4725
+Wire Notes Line
+	4295 4725 4255 4725
+Text Label 1500 5025 2    50   ~ 0
+CLK_TRG
+Text Label 5350 5925 2    50   ~ 0
+CLK_LED
+Text Label 3875 6400 0    50   ~ 0
+OUT
+Wire Wire Line
+	2450 1650 2600 1650
+Wire Wire Line
+	3400 1250 3550 1250
+Wire Wire Line
+	3950 1250 4450 1250
+Wire Wire Line
+	4450 1250 4450 1300
+Wire Wire Line
+	2450 3350 2600 3350
+Wire Wire Line
+	4450 2900 4450 2950
+Wire Wire Line
+	3750 5325 4150 5325
+Wire Wire Line
+	4150 4775 4150 4825
+Wire Wire Line
+	3350 4775 3350 4825
+Wire Wire Line
+	4700 4775 4900 4775
+Wire Wire Line
+	4700 4775 4700 5575
+Wire Wire Line
+	2875 7250 2875 7550
+Wire Wire Line
+	2875 7250 3125 7250
+Wire Wire Line
+	3675 7250 3675 7550
+Wire Wire Line
+	2500 6600 2975 6600
+Wire Wire Line
+	2500 6600 2500 6700
+Wire Wire Line
+	4725 6700 4775 6700
+Wire Wire Line
+	3675 6700 3675 7250
+Wire Wire Line
+	3675 6700 4375 6700
+Wire Wire Line
+	6650 1400 6650 1500
+Wire Wire Line
+	6650 1400 6900 1400
+Wire Wire Line
+	5950 1400 5950 1500
+Wire Wire Line
+	5950 1400 6050 1400
+Wire Wire Line
+	5950 1050 5950 1200
+Wire Wire Line
+	5800 1400 5800 1450
+Wire Wire Line
+	6650 1050 6650 1200
+Wire Wire Line
+	9150 1800 9150 1850
+Wire Wire Line
+	10150 1800 10150 1900
+Wire Wire Line
+	10150 1050 10150 1150
+Wire Wire Line
+	2950 5025 3050 5025
+Wire Wire Line
+	3675 6400 3675 6700
+$Comp
+L Amplifier_Operational:TL074 U2
+U 3 1 5FEBDEE3
+P 3000 1250
+F 0 "U2" H 3000 1617 50  0000 C CNN
+F 1 "TL074" H 3000 1526 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket_LongPads" H 2950 1350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3050 1450 50  0001 C CNN
+F 4 "" H 3000 1250 50  0001 C CNN "Part"
+F 5 "-smtmfg" H 3000 1250 50  0001 C CNN "Config"
+F 6 "DIP 14 (NOT SOIC)" H 3000 1250 50  0001 C CNN "SMT package"
+F 7 "TL074 Quad Op-Amp" H 3000 1250 50  0001 C CNN "Type"
+	3    3000 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1350 8100 1400
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 5FF920DC
+P 7900 1400
+F 0 "#PWR0101" H 7900 1150 50  0001 C CNN
+F 1 "GNDREF" H 7900 1250 50  0001 C CNN
+F 2 "" H 7900 1400 50  0001 C CNN
+F 3 "" H 7900 1400 50  0001 C CNN
+	1    7900 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 1400 8100 1400
+Connection ~ 8100 1400
+Wire Wire Line
+	8100 1400 8100 1450
+$Comp
+L Amplifier_Operational:TL074 U2
+U 5 1 5FFB29CC
+P 8400 1400
+F 0 "U2" H 8358 1446 50  0000 L CNN
+F 1 "TL074" H 8358 1355 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8350 1500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8450 1600 50  0001 C CNN
+F 4 "" H 8400 1400 50  0001 C CNN "Part"
+F 5 "-smtmfg" H 8400 1400 50  0001 C CNN "Config"
+F 6 "DIP 14 (NOT SOIC)" H 8400 1400 50  0001 C CNN "SMT package"
+F 7 "TL074 Quad Op-Amp" H 8400 1400 50  0001 C CNN "Type"
+	5    8400 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1750 8300 1750
+Wire Wire Line
+	8300 1750 8300 1700
+Wire Wire Line
+	8100 1050 8300 1050
+$Comp
+L Amplifier_Operational:TL074 U2
+U 2 1 601EB977
+P 3000 2900
+F 0 "U2" H 3000 3267 50  0000 C CNN
+F 1 "TL074" H 3000 3176 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket_LongPads" H 2950 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3050 3100 50  0001 C CNN
+F 4 "" H 3000 2900 50  0001 C CNN "Part"
+F 5 "-smtmfg" H 3000 2900 50  0001 C CNN "Config"
+F 6 "DIP 14 (NOT SOIC)" H 3000 2900 50  0001 C CNN "SMT package"
+F 7 "TL074 Quad Op-Amp" H 3000 2900 50  0001 C CNN "Type"
+	2    3000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U2
+U 4 1 601FD5B9
+P 3275 6700
+F 0 "U2" H 3275 7067 50  0000 C CNN
+F 1 "TL074" H 3275 6976 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3225 6800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3325 6900 50  0001 C CNN
+F 4 "" H 3275 6700 50  0001 C CNN "Part"
+F 5 "-smtmfg" H 3275 6700 50  0001 C CNN "Config"
+F 6 "DIP 14 (NOT SOIC)" H 3275 6700 50  0001 C CNN "SMT package"
+F 7 "TL074 Quad Op-Amp" H 3275 6700 50  0001 C CNN "Type"
+	4    3275 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U2
+U 1 1 601FECE7
+P 5075 6600
+F 0 "U2" H 5075 6967 50  0000 C CNN
+F 1 "TL074" H 5075 6876 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5025 6700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5125 6800 50  0001 C CNN
+F 4 "" H 5075 6600 50  0001 C CNN "Part"
+F 5 "-smtmfg" H 5075 6600 50  0001 C CNN "Config"
+F 6 "DIP 14 (NOT SOIC)" H 5075 6600 50  0001 C CNN "SMT package"
+F 7 "TL074 Quad Op-Amp" H 5075 6600 50  0001 C CNN "Type"
+	1    5075 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6775 2850 6325 2850
+Wire Wire Line
+	6325 2950 6775 2950
+Wire Wire Line
+	6775 3050 6325 3050
+Wire Wire Line
+	6325 3150 6775 3150
+Wire Wire Line
+	6775 3250 6325 3250
+$Comp
+L power:GNDREF #PWR058
+U 1 1 5FEB21F5
+P 8075 2775
+F 0 "#PWR058" H 8075 2525 50  0001 C CNN
+F 1 "GNDREF" H 8075 2625 50  0001 C CNN
+F 2 "" H 8075 2775 50  0001 C CNN
+F 3 "" H 8075 2775 50  0001 C CNN
+	1    8075 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0102
+U 1 1 60473A78
+P 7375 3750
+F 0 "#PWR0102" H 7375 3500 50  0001 C CNN
+F 1 "GNDREF" H 7375 3600 50  0001 C CNN
+F 2 "" H 7375 3750 50  0001 C CNN
+F 3 "" H 7375 3750 50  0001 C CNN
+	1    7375 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 60473FAC
+P 7375 2450
+F 0 "#PWR0103" H 7375 2300 50  0001 C CNN
+F 1 "+5V" H 7375 2590 50  0000 C CNN
+F 2 "" H 7375 2450 50  0001 C CNN
+F 3 "" H 7375 2450 50  0001 C CNN
+	1    7375 2450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7375 2450 7375 2500
+Connection ~ 7375 2500
+Wire Wire Line
+	7375 2500 7375 2550
+Wire Wire Line
+	10150 1400 10150 1500
+$Comp
+L power:GNDREF #PWR0105
+U 1 1 607E0FD0
+P 9425 1400
+F 0 "#PWR0105" H 9425 1150 50  0001 C CNN
+F 1 "GNDREF" H 9425 1250 50  0001 C CNN
+F 2 "" H 9425 1400 50  0001 C CNN
+F 3 "" H 9425 1400 50  0001 C CNN
+	1    9425 1400
+	1    0    0    -1  
+$EndComp
+Text Notes 800  3950 0    70   ~ 14
+PARAM 3
+Text Notes 800  1500 0    70   ~ 14
+PARAM 1
+Text Notes 800  3150 0    70   ~ 14
+PARAM 2
+Text Notes 800  5325 0    70   ~ 14
+CLK/TRG
+Text Notes 800  7150 0    70   ~ 14
+OUTPUT
+Text Notes 6975 6400 0    60   ~ 0
+NOTES:\n\n- R19/R23: will depend on the color & desired brightness. I use 5.6k for my red LEDs.\n\n- R22/R27/C12: Set for desired PWM filter frequencies.\n   With the provided values, the cutoff frequencies are:\n          884 Hz (JMP_AUDIO not set)\n          9.8 kHz (JMP_AUDIO set)\n   This tool is great: http://sim.okawa-denshi.jp/en/PWMtool.php\n\n- R24/R25: 1% resistors okay (unless required by firmware, e.g., QUANT)\n\n- D1/D2/D3/D4: Regular switching diodes (e.g., 1N4148) okay.\n\n- The 10k resistors in the CV processing circuits  for PARAM1 and PARAM2\n   can be replaced with anything 10k-100k.
+$Comp
+L power:+12V #PWR0112
+U 1 1 60F003D6
+P 9150 1000
+F 0 "#PWR0112" H 9150 850 50  0001 C CNN
+F 1 "+12V" H 9165 1173 50  0000 C CNN
+F 2 "" H 9150 1000 50  0001 C CNN
+F 3 "" H 9150 1000 50  0001 C CNN
+	1    9150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR0114
+U 1 1 60F029CA
+P 9150 1850
+F 0 "#PWR0114" H 9150 1950 50  0001 C CNN
+F 1 "-12V" H 9165 2023 50  0000 C CNN
+F 2 "" H 9150 1850 50  0001 C CNN
+F 3 "" H 9150 1850 50  0001 C CNN
+	1    9150 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR0117
+U 1 1 60F04734
+P 10150 1900
+F 0 "#PWR0117" H 10150 2000 50  0001 C CNN
+F 1 "-5V" H 10165 2073 50  0000 C CNN
+F 2 "" H 10150 1900 50  0001 C CNN
+F 3 "" H 10150 1900 50  0001 C CNN
+	1    10150 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-12V #PWR0120
+U 1 1 60F2916C
+P 8300 1800
+F 0 "#PWR0120" H 8300 1900 50  0001 C CNN
+F 1 "-12V" H 8315 1973 50  0000 C CNN
+F 2 "" H 8300 1800 50  0001 C CNN
+F 3 "" H 8300 1800 50  0001 C CNN
+	1    8300 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8300 1800 8300 1750
+Connection ~ 8300 1750
+$Comp
+L power:+12V #PWR0121
+U 1 1 60F39736
+P 8300 1000
+F 0 "#PWR0121" H 8300 850 50  0001 C CNN
+F 1 "+12V" H 8315 1173 50  0000 C CNN
+F 2 "" H 8300 1000 50  0001 C CNN
+F 3 "" H 8300 1000 50  0001 C CNN
+	1    8300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 1000 8300 1050
+Connection ~ 8300 1050
+Wire Wire Line
+	8300 1050 8300 1100
+Wire Wire Line
+	5450 4975 5450 5025
+Wire Wire Line
+	3450 2550 3450 2600
+$Comp
+L power:+5V #PWR029
+U 1 1 5FE9CC03
+P 3450 2550
+F 0 "#PWR029" H 3450 2400 50  0001 C CNN
+F 1 "+5V" H 3450 2690 50  0000 C CNN
+F 2 "" H 3450 2550 50  0001 C CNN
+F 3 "" H 3450 2550 50  0001 C CNN
+	1    3450 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2900 3550 2900
+$Comp
+L Device:R R10
+U 1 1 5FE9CBEE
+P 3700 2900
+F 0 "R10" V 3780 2900 50  0000 C CNN
+F 1 "10k" V 3700 2900 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3630 2900 50  0001 C CNN
+F 3 "" H 3700 2900 50  0001 C CNN
+F 4 "" H 3700 2900 50  0001 C CNN "Part"
+F 5 "1%" H 3700 2900 50  0001 C CNN "Tolerance"
+F 6 "C17414" H 3700 2900 50  0001 C CNN "LCSC"
+F 7 "Yes" H 3700 2900 50  0001 C CNN "SMT Place"
+F 8 "R_0805" H 3700 2900 50  0001 C CNN "SMT package"
+F 9 "1% Metal Film Resistor" H 3700 2900 50  0001 C CNN "Type"
+	1    3700 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 2600 3950 2600
+Wire Wire Line
+	3450 2600 3550 2600
+$Comp
+L Device:R R8
+U 1 1 5FE9CBF4
+P 3700 2600
+F 0 "R8" V 3780 2600 50  0000 C CNN
+F 1 "10k" V 3700 2600 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3630 2600 50  0001 C CNN
+F 3 "" H 3700 2600 50  0001 C CNN
+F 4 "" H 3700 2600 50  0001 C CNN "Part"
+F 5 "1%" H 3700 2600 50  0001 C CNN "Tolerance"
+F 6 "C17414" H 3700 2600 50  0001 C CNN "LCSC"
+F 7 "Yes" H 3700 2600 50  0001 C CNN "SMT Place"
+F 8 "R_0805" H 3700 2600 50  0001 C CNN "SMT package"
+F 9 "1% Metal Film Resistor" H 3700 2600 50  0001 C CNN "Type"
+	1    3700 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 2900 4450 2900
+Connection ~ 3950 2900
+Wire Wire Line
+	3950 2600 3950 2900
+Wire Wire Line
+	3850 2900 3950 2900
+Wire Wire Line
+	6900 1450 6900 1400
+Connection ~ 6900 1400
+$Comp
+L Device:D_Schottky D10
+U 1 1 611B0D4E
+P 6900 1050
+F 0 "D10" H 6900 833 50  0000 C CNN
+F 1 "1N5818" H 6900 924 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 6900 1050 50  0001 C CNN
+F 3 "~" H 6900 1050 50  0001 C CNN
+F 4 "Or 1N5819 or other equivalent" H 6900 1050 50  0001 C CNN "Note"
+F 5 "" H 6900 1050 50  0001 C CNN "Part"
+F 6 "C8598" H 6900 1050 50  0001 C CNN "LCSC"
+F 7 "Yes" H 6900 1050 50  0001 C CNN "SMT Place"
+F 8 "5819" H 6900 1050 50  0001 C CNN "SMT Note"
+F 9 "SOD-123" H 6900 1050 50  0001 C CNN "SMT package"
+F 10 "Schottky reverse protection diode" H 6900 1050 50  0001 C CNN "Type"
+	1    6900 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 1050 6750 1050
+Connection ~ 6650 1050
+$Comp
+L Device:D_Schottky D11
+U 1 1 611E4E02
+P 6900 1750
+F 0 "D11" H 6900 1625 50  0000 C CNN
+F 1 "1N5818" H 6900 1534 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 6900 1750 50  0001 C CNN
+F 3 "~" H 6900 1750 50  0001 C CNN
+F 4 "Or 1N5819 or other equivalent" H 6900 1750 50  0001 C CNN "Note"
+F 5 "" H 6900 1750 50  0001 C CNN "Part"
+F 6 "C8598" H 6900 1750 50  0001 C CNN "LCSC"
+F 7 "Yes" H 6900 1750 50  0001 C CNN "SMT Place"
+F 8 "5819" H 6900 1750 50  0001 C CNN "SMT Note"
+F 9 "SOD-123" H 6900 1750 50  0001 C CNN "SMT package"
+F 10 "Schottky reverse protection diode" H 6900 1750 50  0001 C CNN "Type"
+	1    6900 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1750 6750 1750
+Connection ~ 6650 1750
+Wire Wire Line
+	7200 1750 7200 1800
+Connection ~ 7200 1750
+Wire Wire Line
+	7050 1750 7200 1750
+Wire Wire Line
+	7200 1050 7200 1100
+Connection ~ 7200 1050
+Wire Wire Line
+	7050 1050 7200 1050
+Wire Wire Line
+	7200 1000 7200 1050
+Wire Wire Line
+	7200 1700 7200 1750
+Wire Wire Line
+	6900 1400 7200 1400
+$Comp
+L power:-12V #PWR0113
+U 1 1 60F0210B
+P 7200 1800
+F 0 "#PWR0113" H 7200 1900 50  0001 C CNN
+F 1 "-12V" H 7215 1973 50  0000 C CNN
+F 2 "" H 7200 1800 50  0001 C CNN
+F 3 "" H 7200 1800 50  0001 C CNN
+	1    7200 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0111
+U 1 1 60EE069F
+P 7200 1000
+F 0 "#PWR0111" H 7200 850 50  0001 C CNN
+F 1 "+12V" H 7215 1173 50  0000 C CNN
+F 2 "" H 7200 1000 50  0001 C CNN
+F 3 "" H 7200 1000 50  0001 C CNN
+	1    7200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1400 7200 1500
+Connection ~ 7200 1400
+Wire Wire Line
+	7200 1300 7200 1400
+$Comp
+L Device:CP1_Small C2
+U 1 1 5FEC5611
+P 7200 1600
+F 0 "C2" H 7210 1670 50  0000 L CNN
+F 1 "22u" H 7210 1520 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 7200 1600 50  0001 C CNN
+F 3 "" H 7200 1600 50  0001 C CNN
+F 4 "At least 22uF" H 7200 1600 50  0001 C CNN "Note"
+F 5 "" H 7200 1600 50  0001 C CNN "Part"
+F 6 "35V" H 7200 1600 50  0001 C CNN "Power Rating"
+F 7 "C336292" H 7200 1600 50  0001 C CNN "LCSC"
+F 8 "Yes" H 7200 1600 50  0001 C CNN "LCSCe"
+F 9 "Yes" H 7200 1600 50  0001 C CNN "SMT Place"
+F 10 "CP_ELEC_5x5.3" H 7200 1600 50  0001 C CNN "SMT package"
+F 11 "Electrolytic cap" H 7200 1600 50  0001 C CNN "Type"
+	1    7200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C1
+U 1 1 5FEC53EC
+P 7200 1200
+F 0 "C1" H 7210 1270 50  0000 L CNN
+F 1 "22u" H 7210 1120 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 7200 1200 50  0001 C CNN
+F 3 "" H 7200 1200 50  0001 C CNN
+F 4 "At least 22uF" H 7200 1200 50  0001 C CNN "Note"
+F 5 "" H 7200 1200 50  0001 C CNN "Part"
+F 6 "35V" H 7200 1200 50  0001 C CNN "Power Rating"
+F 7 "C336292" H 7200 1200 50  0001 C CNN "LCSC"
+F 8 "Yes" H 7200 1200 50  0001 C CNN "LCSCe"
+F 9 "Yes" H 7200 1200 50  0001 C CNN "SMT Place"
+F 10 "CP_ELEC_5x5.3" H 7200 1200 50  0001 C CNN "SMT package"
+F 11 "Electrolytic cap" H 7200 1200 50  0001 C CNN "Type"
+	1    7200 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 1750 7200 1750
+Wire Wire Line
+	7200 1050 7350 1050
+Wire Wire Line
+	7200 1400 7350 1400
+Wire Wire Line
+	6250 2500 6250 3350
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85V-10PU U1
+U 1 1 6020224E
+P 7375 3150
+F 0 "U1" H 7875 2600 50  0000 R CNN
+F 1 "ATtiny85" H 7875 2500 50  0000 R CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket_LongPads" H 7375 3150 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 7375 3150 50  0001 C CNN
+F 4 "" H 7375 3150 50  0001 C CNN "Part"
+F 5 "-smtmfg" H 7375 3150 50  0001 C CNN "Config"
+F 6 "DIP 8 (NOT SOIC)" H 7375 3150 50  0001 C CNN "SMT package"
+F 7 "ATtiny85 Microcontroller" H 7375 3150 50  0001 C CNN "Type"
+	1    7375 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8075 2500 8075 2575
+Wire Notes Line
+	5950 2475 5950 2900
+Wire Notes Line
+	5950 2900 6300 2900
+Connection ~ 10150 1400
+Wire Wire Line
+	9150 1800 9350 1800
+Wire Wire Line
+	9425 1400 9650 1400
+Wire Wire Line
+	9650 1500 9650 1400
+Wire Wire Line
+	9650 1400 10150 1400
+Connection ~ 9650 1400
+Wire Wire Line
+	9650 1350 9650 1400
+$Comp
+L Regulator_Linear:L78L05_TO92 U3
+U 1 1 5FEC8D65
+P 9650 1050
+F 0 "U3" H 9650 1292 50  0000 C CNN
+F 1 "78L05" H 9650 1201 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 9650 1050 50  0001 C CNN
+F 3 "" H 9650 1050 50  0001 C CNN
+F 4 "" H 9650 1050 50  0001 C CNN "Part"
+F 5 "Yes" H 9650 1050 50  0001 C CNN "SMT Place"
+F 6 "C71136" H 9650 1050 50  0001 C CNN "LCSC"
+F 7 "SOT-89-3" H 9650 1050 50  0001 C CNN "SMT package"
+F 8 "LM78L05 +5V Regulator" H 9650 1050 50  0001 C CNN "Type"
+	1    9650 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 1050 10150 1050
+Wire Wire Line
+	9150 1050 9350 1050
+$Comp
+L power:+5V #PWR0122
+U 1 1 5FF77E53
+P 5450 4975
+F 0 "#PWR0122" H 5450 4825 50  0001 C CNN
+F 1 "+5V" H 5450 5115 50  0000 C CNN
+F 2 "" H 5450 4975 50  0001 C CNN
+F 3 "" H 5450 4975 50  0001 C CNN
+	1    5450 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5FEA7A38
+P 4950 5575
+F 0 "R20" V 5030 5575 50  0000 C CNN
+F 1 "100k" V 4950 5575 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4880 5575 50  0001 C CNN
+F 3 "" H 4950 5575 50  0001 C CNN
+F 4 "" H 4950 5575 50  0001 C CNN "Part"
+F 5 "Yes" H 4950 5575 50  0001 C CNN "SMT Place"
+F 6 "C17407" H 4950 5575 50  0001 C CNN "LCSC"
+F 7 "R_0805" H 4950 5575 50  0001 C CNN "SMT package"
+F 8 "5% Carbon Film Resistor" H 4950 5575 50  0001 C CNN "Type"
+	1    4950 5575
+	0    1    -1   0   
+$EndComp
+Text Label 1800 1150 0    50   ~ 0
+P1_AVG
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60292B0C
+P 9800 3825
+F 0 "H2" H 9900 3871 50  0000 L CNN
+F 1 "MountingHole" H 9900 3780 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 9800 3825 50  0001 C CNN
+F 3 "~" H 9800 3825 50  0001 C CNN
+F 4 "Yes" H 9800 3825 50  0001 C CNN "Exclude"
+F 5 "do not fit" H 9800 3825 50  0001 C CNN "Config"
+	1    9800 3825
+	1    0    0    -1  
+$EndComp
+Text Label 1800 2800 0    50   ~ 0
+P2_AVG
+Wire Wire Line
+	1800 1150 2700 1150
+Wire Wire Line
+	1800 2800 2700 2800
+Wire Wire Line
+	2075 3950 4900 3950
+Wire Wire Line
+	4450 1250 4900 1250
+Wire Wire Line
+	4450 2900 4900 2900
+Wire Wire Line
+	1150 6600 1675 6600
+Wire Wire Line
+	6250 3350 6775 3350
+Wire Wire Line
+	7375 2500 8075 2500
+$Comp
+L Device:R R26
+U 1 1 600D211A
+P 6775 2500
+F 0 "R26" V 6855 2500 50  0000 C CNN
+F 1 "100k" V 6775 2500 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 6705 2500 50  0001 C CNN
+F 3 "" H 6775 2500 50  0001 C CNN
+F 4 "" H 6775 2500 50  0001 C CNN "Part"
+F 5 "Yes" H 6775 2500 50  0001 C CNN "SMT Place"
+F 6 "C17407" H 6775 2500 50  0001 C CNN "LCSC"
+F 7 "R_0805" H 6775 2500 50  0001 C CNN "SMT package"
+F 8 "5% Carbon Film Resistor" H 6775 2500 50  0001 C CNN "Type"
+	1    6775 2500
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6250 2500 6625 2500
+Wire Wire Line
+	6925 2500 7375 2500
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 6012F33D
+P 1675 6325
+F 0 "JP2" H 1675 6405 50  0000 C CNN
+F 1 "JMP" H 1685 6265 40  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1675 6325 50  0001 C CNN
+F 3 "" H 1675 6325 50  0001 C CNN
+F 4 "Plus 2x jumpers. Alternatively, you can solder in some wire." H 1675 6325 50  0001 C CNN "Note"
+F 5 "" H 1675 6325 50  0001 C CNN "Part"
+F 6 "-smtmfg" H 1675 6325 50  0001 C CNN "Config"
+F 7 "1x2 Male Pin Header" H 1675 6325 50  0001 C CNN "Type"
+	1    1675 6325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1675 6425 1675 6600
+Connection ~ 1675 6600
+Wire Wire Line
+	1675 6600 1925 6600
+$Comp
+L Device:R R27
+U 1 1 6013AE20
+P 2075 6100
+F 0 "R27" V 2155 6100 50  0000 C CNN
+F 1 "10k*" V 2075 6100 40  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2005 6100 50  0001 C CNN
+F 3 "" H 2075 6100 50  0001 C CNN
+F 4 "" H 2075 6100 50  0001 C CNN "Part"
+F 5 "1%" H 2075 6100 50  0001 C CNN "Tolerance"
+F 6 "Yes" H 2075 6100 50  0001 C CNN "SMT Place"
+F 7 "8.2k" H 2075 6100 50  0001 C CNN "SMT Value"
+F 8 "C17828" H 2075 6100 50  0001 C CNN "LCSC"
+F 9 "See note about PWM filter" H 2075 6100 50  0001 C CNN "Note"
+F 10 "R_0805" H 2075 6100 50  0001 C CNN "SMT package"
+F 11 "1% Metal Film Resistor" H 2075 6100 50  0001 C CNN "Type"
+	1    2075 6100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1675 6225 1675 6100
+Wire Wire Line
+	1675 6100 1925 6100
+Wire Wire Line
+	2225 6100 2500 6100
+Wire Wire Line
+	2500 6100 2500 6600
+$Comp
+L Device:R R28
+U 1 1 603B9F07
+P 1675 6800
+F 0 "R28" V 1755 6800 50  0000 C CNN
+F 1 "100k" V 1675 6800 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1605 6800 50  0001 C CNN
+F 3 "" H 1675 6800 50  0001 C CNN
+F 4 "" H 1675 6800 50  0001 C CNN "Part"
+F 5 "Yes" H 1675 6800 50  0001 C CNN "SMT Place"
+F 6 "C17407" H 1675 6800 50  0001 C CNN "LCSC"
+F 7 "R_0805" H 1675 6800 50  0001 C CNN "SMT package"
+F 8 "5% Carbon Film Resistor" H 1675 6800 50  0001 C CNN "Type"
+	1    1675 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1675 6600 1675 6650
+$Comp
+L power:GNDREF #PWR010
+U 1 1 603C5FBC
+P 1675 6950
+F 0 "#PWR010" H 1675 6700 50  0001 C CNN
+F 1 "GNDREF" H 1675 6800 50  0001 C CNN
+F 2 "" H 1675 6950 50  0001 C CNN
+F 3 "" H 1675 6950 50  0001 C CNN
+	1    1675 6950
+	1    0    0    -1  
+$EndComp
+Text Notes 2550 6350 0    50   ~ 0
+PWM filter
+$Comp
+L Device:R R14
+U 1 1 5FEA5F93
+P 4150 4575
+F 0 "R14" V 4230 4575 50  0000 C CNN
+F 1 "47k" V 4150 4575 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4080 4575 50  0001 C CNN
+F 3 "" H 4150 4575 50  0001 C CNN
+F 4 "" H 4150 4575 50  0001 C CNN "Part"
+F 5 "C17713" H 4150 4575 50  0001 C CNN "LCSC"
+F 6 "Yes" H 4150 4575 50  0001 C CNN "SMT Place"
+F 7 "R_0805" H 4150 4575 50  0001 C CNN "SMT package"
+F 8 "5% Carbon Film Resistor" H 4150 4575 50  0001 C CNN "Type"
+	1    4150 4575
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:AVR-ISP-6 J12
+U 1 1 60796144
+P 8375 4300
+F 0 "J12" H 8046 4396 50  0000 R CNN
+F 1 "ISP" H 8046 4305 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 8375 4300 50  0001 C CNN
+F 3 "~" H 8375 4300 50  0001 C CNN
+F 4 "" H 8375 4300 50  0001 C CNN "Part"
+F 5 "-smtmfg" H 8375 4300 50  0001 C CNN "Config"
+F 6 "2x3 Male Pin Header" H 8375 4300 50  0001 C CNN "Type"
+	1    8375 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 60797E9A
+P 8275 3725
+AR Path="/5FE97452/60797E9A" Ref="#PWR011"  Part="1" 
+AR Path="/5FE9B0F3/60797E9A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR011" H 8275 3575 50  0001 C CNN
+F 1 "+5V" H 8290 3898 50  0000 C CNN
+F 2 "" H 8275 3725 50  0001 C CNN
+F 3 "" H 8275 3725 50  0001 C CNN
+	1    8275 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8275 3800 8275 3725
+$Comp
+L power:GNDREF #PWR012
+U 1 1 607A4C77
+P 8275 4750
+AR Path="/5FE97452/607A4C77" Ref="#PWR012"  Part="1" 
+AR Path="/5FE9B0F3/607A4C77" Ref="#PWR?"  Part="1" 
+F 0 "#PWR012" H 8275 4500 50  0001 C CNN
+F 1 "GNDREF" H 8275 4600 50  0001 C CNN
+F 2 "" H 8275 4750 50  0001 C CNN
+F 3 "" H 8275 4750 50  0001 C CNN
+	1    8275 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8275 4700 8275 4750
+Wire Wire Line
+	8775 4200 9225 4200
+Text Label 9225 4200 2    50   ~ 0
+MCU_PB0
+Text Label 9225 4100 2    50   ~ 0
+MCU_PWM
+Wire Wire Line
+	9225 4100 8775 4100
+Text Label 6325 3350 0    50   ~ 0
+MCU_RESET
+Text Label 9225 4400 2    50   ~ 0
+MCU_RESET
+Wire Wire Line
+	9225 4400 8775 4400
+Wire Wire Line
+	1500 5025 2350 5025
+$Comp
+L Device:R R18
+U 1 1 5FEA467B
+P 3750 5475
+F 0 "R18" V 3830 5475 50  0000 C CNN
+F 1 "10k" V 3750 5475 50  0000 C CNN
+F 2 "SDIY:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3680 5475 50  0001 C CNN
+F 3 "" H 3750 5475 50  0001 C CNN
+F 4 "" H 3750 5475 50  0001 C CNN "Part"
+F 5 "1%" H 3750 5475 50  0001 C CNN "Tolerance"
+F 6 "C17414" H 3750 5475 50  0001 C CNN "LCSC"
+F 7 "Yes" H 3750 5475 50  0001 C CNN "SMT Place"
+F 8 "R_0805" H 3750 5475 50  0001 C CNN "SMT package"
+F 9 "1% Metal Film Resistor" H 3750 5475 50  0001 C CNN "Type"
+	1    3750 5475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9225 4300 8775 4300
+Text Label 9225 4300 2    50   ~ 0
+MCU_ADC1
+Text Label 9475 3425 2    50   ~ 0
+P3_POT
+Text Label 9475 3525 2    50   ~ 0
+P2_AVG
+Text Label 10050 3425 0    50   ~ 0
+CLK_TRG
+Text Label 10050 3325 0    50   ~ 0
+CLK_LED
+Text Label 10200 2925 0    50   ~ 0
+OUT
+Text Label 9525 3325 2    50   ~ 0
+LED_POS
+Text Label 9525 3225 2    50   ~ 0
+LED_NEG
+Text Label 10100 3525 0    50   ~ 0
+P1_AVG
+Wire Wire Line
+	9475 3525 9075 3525
+Wire Wire Line
+	10100 3525 10400 3525
+$Comp
+L power:+5V #PWR0115
+U 1 1 60A88C6A
+P 9500 2725
+AR Path="/5FE97452/60A88C6A" Ref="#PWR0115"  Part="1" 
+AR Path="/5FE9B0F3/60A88C6A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0115" H 9500 2575 50  0001 C CNN
+F 1 "+5V" H 9515 2898 50  0000 C CNN
+F 2 "" H 9500 2725 50  0001 C CNN
+F 3 "" H 9500 2725 50  0001 C CNN
+	1    9500 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0116
+U 1 1 60A88C70
+P 9800 3575
+AR Path="/5FE97452/60A88C70" Ref="#PWR0116"  Part="1" 
+AR Path="/5FE9B0F3/60A88C70" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0116" H 9800 3325 50  0001 C CNN
+F 1 "GNDREF" H 9800 3425 50  0001 C CNN
+F 2 "" H 9800 3575 50  0001 C CNN
+F 3 "" H 9800 3575 50  0001 C CNN
+	1    9800 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0118
+U 1 1 60A88C76
+P 9675 2725
+AR Path="/5FE97452/60A88C76" Ref="#PWR0118"  Part="1" 
+AR Path="/5FE9B0F3/60A88C76" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0118" H 9675 2825 50  0001 C CNN
+F 1 "-5V" H 9690 2898 50  0000 C CNN
+F 2 "" H 9675 2725 50  0001 C CNN
+F 3 "" H 9675 2725 50  0001 C CNN
+	1    9675 2725
+	1    0    0    -1  
+$EndComp
+Connection ~ 9800 3225
+Wire Wire Line
+	9800 3225 10400 3225
+Wire Wire Line
+	9500 2725 9500 2925
+Wire Wire Line
+	9075 2925 9500 2925
+Wire Wire Line
+	10200 2925 10400 2925
+Wire Wire Line
+	9075 3025 9675 3025
+Wire Wire Line
+	9675 3025 9675 2725
+Wire Wire Line
+	9800 3225 9800 3125
+Connection ~ 9800 3125
+Wire Wire Line
+	10400 3125 9800 3125
+Wire Wire Line
+	9075 3425 9475 3425
+Wire Wire Line
+	10050 3425 10400 3425
+Wire Wire Line
+	9075 3325 9525 3325
+Wire Wire Line
+	9075 3225 9525 3225
+Wire Wire Line
+	10400 3325 10050 3325
+Wire Wire Line
+	9800 3125 9800 3025
+Wire Wire Line
+	9800 3025 10400 3025
+Wire Wire Line
+	3675 6400 3875 6400
+Text Label 5275 7200 2    50   ~ 0
+LED_NEG
+Text Label 4875 7050 0    50   ~ 0
+LED_POS
+Wire Wire Line
+	9800 3225 9800 3575
+NoConn ~ 9075 3125
+Text Notes 3050 7675 0    40   ~ 0
+JMP_UNIPOLAR
+Text Notes 1625 6475 1    40   ~ 0
+JMP_AUDIO
+Text Notes 1950 6725 0    40   ~ 0
+See note
+Text Notes 1950 6225 0    40   ~ 0
+See note
+$EndSCHEMATC

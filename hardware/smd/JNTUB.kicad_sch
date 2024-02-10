@@ -1,0 +1,56 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid a4d257cb-67c7-406e-b615-7f36d1e63070)
+
+  (paper "USLetter")
+
+  (title_block
+    (title "JoyfulNoise Tiny Utility Board")
+    (date "2021-02-06")
+    (rev "0.3")
+    (company "Created by Ben Reeves")
+    (comment 1 "This hardware is open source under CC BY-SA 4.0")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 139.7 43.18) (size 101.6 60.96) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005fe97452)
+    (property "Sheetname" "MainBoard" (at 139.7 42.3414 0)
+      (effects (font (size 1.524 1.524)) (justify left bottom))
+    )
+    (property "Sheetfile" "MainBoard.kicad_sch" (at 139.7 104.8262 0)
+      (effects (font (size 1.524 1.524)) (justify left top))
+    )
+    (instances
+      (project "JNTUB"
+        (path "/a4d257cb-67c7-406e-b615-7f36d1e63070" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 41.91 43.18) (size 92.71 60.96) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005fe9b0f3)
+    (property "Sheetname" "PeripheralBoard" (at 41.91 42.3414 0)
+      (effects (font (size 1.524 1.524)) (justify left bottom))
+    )
+    (property "Sheetfile" "PeripheralBoard.kicad_sch" (at 41.91 104.8262 0)
+      (effects (font (size 1.524 1.524)) (justify left top))
+    )
+    (instances
+      (project "JNTUB"
+        (path "/a4d257cb-67c7-406e-b615-7f36d1e63070" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

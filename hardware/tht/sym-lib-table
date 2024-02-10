@@ -1,4 +1,5 @@
 (sym_lib_table
-  (lib (name JNTUB-rescue)(type Legacy)(uri ${KIPRJMOD}/JNTUB-rescue.lib)(options "")(descr ""))
-  (lib (name SDIY)(type Legacy)(uri ${KIPRJMOD}/Libraries/SDIY.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "JNTUB-rescue")(type "KiCad")(uri "${KIPRJMOD}/JNTUB-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "SDIY")(type "Legacy")(uri "${KIPRJMOD}/../Libraries/SDIY.lib")(options "")(descr ""))
 )
